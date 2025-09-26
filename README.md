@@ -1,4 +1,3 @@
-
 PART 1
 *README for my website*
 This is a website for my gaming hub as i am a gamer at heart
