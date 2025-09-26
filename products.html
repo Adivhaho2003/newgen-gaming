@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Gaming - Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/products.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>NextGen <span>Gaming</span></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="products.html" class="nav-link active">Products</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Page Content -->
+    <main>
+        <section id="products" class="page active">
+            <div class="container">
+                <div class="page-header">
+                    <h2>Our Products</h2>
+                    <p>Explore our range of gaming products and accessories</p>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Gaming PCs</h4>
+                        <p>Custom-built gaming desktops with the latest components for maximum performance.</p>
+                        <div class="price">Starting at R15,999</div>
+                        <div class="image-container">
+                            <img src="Images/download (14).jfif" alt="Gaming PC">
+                            <img src="Images/download (2).jfif" alt="Gaming PC Setup">
+                        </div>
+                        <button class="btn">View Details</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h4>Gaming Laptops</h4>
+                        <p>Powerful portable gaming machines for those who need performance on the go.</p>
+                        <div class="price">Starting at R12,499</div>
+                        <div class="image-container">
+                            <img src="Images/download (3).jfif" alt="Gaming Laptop">
+                            <img src="Images/download (4).jfif" alt="Gaming Laptop Setup">
+                        </div>
+                        <button class="btn">View Details</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <h4>Gaming Peripherals</h4>
+                        <p>Keyboards, mice, headsets, and other essential gaming accessories.</p>
+                        <div class="price">From R899</div>
+                        <div class="image-container">
+                            <img src="Images/download (5).jfif" alt="Gaming Keyboard">
+                            <img src="Images/download (6).jfif" alt="Gaming Mouse">
+                        </div>
+                        <button class="btn">View Details</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-chair"></i>
+                        </div>
+                        <h4>Gaming Chairs</h4>
+                        <p>Ergonomic chairs designed for long gaming sessions with maximum comfort.</p>
+                        <div class="price">From R2,499</div>
+                        <div class="image-container">
+                            <img src="Images/download (7).jfif" alt="Gaming Chair">
+                            <img src="Images/download (6).jfif" alt="Gaming Chair">
+                        </div>
+                        <button class="btn">View Details</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h4>Console Accessories</h4>
+                        <p>Controllers, headsets, and other accessories for console gamers.</p>
+                        <div class="price">From R699</div>
+                        <div class="image-container">
+                            <img src="Images/download (9).jfif" alt="Console Controller">
+                            <img src="Images/images (6).jfif" alt="Console Controller">
+                            
+                        </div>
+                        <button class="btn">View Details</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Gaming Merchandise</h4>
+                        <p>Apparel, collectibles, and other gaming-themed merchandise.</p>
+                        <div class="price">From R299</div>
+                        <div class="image-container">
+                            <img src="Images/p1.jpg" alt="Gaming Merchandise">
+                            <img src="Images/download (8).jfif" alt="Gaming Chair Setup">
+                        </div>
+                        <button class="btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>NextGen Gaming</h3>
+                <p>Level Up Your Gaming Experience</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitch"></i></a>
+                </div>
+                
+                <p>&copy; 2023 NextGen Gaming. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Mobile Navigation Toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mainNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

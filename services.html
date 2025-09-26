@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Gaming - Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/services.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>NextGen <span>Gaming</span></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="services.html" class="nav-link active">Services</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Page Content -->
+    <main>
+        <section id="services" class="page active">
+            <div class="container">
+                <div class="page-header">
+                    <h2>Our Services</h2>
+                    <p>Discover the gaming experiences and services we offer</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Premium Gaming Stations</h4>
+                        <p>High-end PCs with RTX 4080 GPUs, 240Hz monitors, and mechanical keyboards for the ultimate gaming experience.</p>
+                        <div class="image-container">
+                           <img src="Images/download (15).jfif" alt="Gaming Setup"> 
+                            <img src="Images/images (2).jfif" alt="Gaming Setup">
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Tournaments & Events</h4>
+                        <p>Regular esports tournaments with cash prizes, sponsored events, and community gaming nights.</p>
+                        <div class="image-container">
+                            <img src="Images/images (3).jfif" alt="Gaming Tournament">
+                            <img src="Images/images (4).jfif" alt="Gaming Tournament">
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Group Bookings</h4>
+                        <p>Perfect for birthday parties, corporate events, and LAN parties with group discounts available.</p>
+                        <div class="image-container">
+                            <img src="Images/images (2).jfif" alt="Group Gaming">
+                            <img src="Images/images (1).jfif" alt="Gaming Setup">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Gaming Workshops</h4>
+                        <p>Learn from pros with workshops on game strategies, streaming techniques, and PC building.</p>
+                        <div class="image-container">
+                            <img src="Images/images (7).jfif" alt="Gaming Workshop">
+                            <img src="Images/images (8).jfif" alt="Gaming Workshop">
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <h4>VR Experiences</h4>
+                        <p>Immerse yourself in virtual reality with our dedicated VR stations and latest VR titles.</p>
+                        <div class="image-container">
+                            <img src="Images/download.jfif" alt="VR Gaming">
+                            <img src="Images/download (1).jfif" alt="VR Gaming">
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h4>Gaming Café</h4>
+                        <p>Enjoy snacks, energy drinks, and gaming-themed refreshments while you play.</p>
+                        <div class="image-container">
+                            <img src="Images/images (5).jfif" alt="Group Gaming">
+                            <img src="Images/images (6).jfif" alt="Group Gaming">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>NextGen Gaming</h3>
+                <p>Level Up Your Gaming Experience</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitch"></i></a>
+                </div>
+                
+                <p>&copy; 2023 NextGen Gaming. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Mobile Navigation Toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mainNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

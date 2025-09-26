@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Gaming - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/about.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    
+                    <h1>NextGen <span>Gaming</span></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link active">About Us</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Page Content -->
+    <main>
+    <section id="about" class="page active">
+        <div class="container">
+            <div class="page-header">
+                <h2>About NextGen Gaming</h2>
+                <p>Learn about our mission, vision, and the team behind the ultimate gaming experience</p>
+            </div>
+            
+            <div class="content-section">
+                <h3>Our Story</h3>
+                <p>Founded in 2020, NextGen Gaming was created by passionate gamers who wanted to build a community space where gamers of all levels could come together, compete, and improve their skills. What started as a small local gathering has grown into a premier gaming destination.</p>
+                <p>We've hosted over 100 tournaments, trained thousands of gamers, and built a community that spans the entire region. Our commitment to quality and innovation has made us the go-to destination for serious gamers.</p>
+            </div>
+            
+            <div class="content-section">
+                <h3>Our Mission & Vision</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4>Our Mission</h4>
+                        <p>To provide a state-of-the-art gaming environment that fosters community, competition, and skill development for gamers of all levels and backgrounds.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Our Vision</h4>
+                        <p>To become the leading gaming hub in the region, recognized for excellence in esports training, community events, and cutting-edge gaming technology.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3>Our Values</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community</h4>
+                        <p>We believe in building a supportive and inclusive gaming community where everyone feels welcome.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Excellence</h4>
+                        <p>We strive for excellence in everything we do, from our facilities to our tournaments.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p>We continuously innovate to provide the best gaming experience with the latest technology.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h3>Our Team</h3>
+                <p>Meet the passionate individuals who make NextGen Gaming possible:</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4>Adivhaho JB</h4>
+                        <p>Founder & CEO</p>
+                        <p>With over 10 years of gaming experience, Adivhaho envisioned a space where gamers could thrive together.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Pandelani Ishmael</h4>
+                        <p>Operations Manager</p>
+                        <p>Pandelani ensures our facilities run smoothly and our events are executed flawlessly.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h4>Shaun Xavos</h4>
+                        <p>Head of Esports</p>
+                        <p>Shaun brings professional gaming expertise to our tournaments and training programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>NextGen Gaming</h3>
+                <p>Level Up Your Gaming Experience</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitch"></i></a>
+                </div>
+                
+                <p>&copy; 2023 NextGen Gaming. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Mobile Navigation Toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mainNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

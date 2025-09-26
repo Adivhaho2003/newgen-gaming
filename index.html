@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Gaming - Home</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>NextGen <span>Gaming</span></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link active">Home</a></li> <!-- Fixed: Added active class -->
+                        <li><a href="about.html" class="nav-link">About Us</a></li> <!-- Fixed: Removed active class -->
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Page Content -->
+    <main>
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Level Up Your Gaming Experience</h2>
+                    <p>Welcome to NextGen Gaming, the ultimate destination for gamers of all levels. Experience cutting-edge technology, competitive tournaments, and a vibrant community.</p>
+                    <a href="products.html" class="btn">Explore Products</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="nav-highlight-demo">
+                <h3>Navigation Highlighting</h3>
+                <p>The current active page in the navigation is highlighted with a special color and an underline indicator. Try clicking on different navigation items to see the highlighting in action!</p>
+            </div>
+            
+            <div class="content-section">
+                <h3>Why Choose NextGen?</h3>
+                <p>At NextGen Gaming, we provide state-of-the-art gaming equipment, comfortable environment, and regular tournaments with exciting prizes. Whether you're a casual gamer or a competitive esports enthusiast, we have something for everyone.</p>
+            </div>
+            
+            <div class="content-section">
+                <h3>Upcoming Events</h3>
+                <p>Check out our upcoming tournaments and events. From Fortnite Fridays to Valorant Weekends, there's always something happening at NextGen.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>NextGen Gaming</h3>
+                <p>Level Up Your Gaming Experience</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitch"></i></a>
+                </div>
+                
+                <p>&copy; 2023 NextGen Gaming. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Mobile Navigation Toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mainNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
